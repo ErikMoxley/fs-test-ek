@@ -1,0 +1,9 @@
+body {
+    background-color: #dddddd;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    padding: 50px;
+}
