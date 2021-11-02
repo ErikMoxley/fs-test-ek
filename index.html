@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack Test</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="/team_name_url/" method="post">
-        <label for="username">Name: </label>
+    <form>
+        <label for="name">Name: </label>
         <br>
-        <input id="username" type="text">
+        <input name="name" type="text" required>
         <br>
         <label for="email">Email: </label>
         <br>
-        <input id="email" type="text">
+        <input name="email" type="email" required>
         <br>
-        <label for="number">Phone Number: </label>
+        <label for="mobile">Phone Number: </label>
         <br>
-        <input id="number" type="text">
+        <input name="mobile" type="text" required>
         <br>
         <label for="industry">Industry: </label>
         <br>
-        <input id="industry" type="text">
+        <input name="industry" type="text" required>
+        <br>
+        <input type="submit" value="Send Away!"/>
     </form>
     <br>
-    <button onClick="getRequest()">Submit</button>
+<script src="index.js"></script>
 </body>
 </html>
