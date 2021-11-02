@@ -7,27 +7,53 @@
     <title>Fullstack Test</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <form>
-        <label for="name">Name: </label>
-        <br>
-        <input name="name" type="text" required>
-        <br>
-        <label for="email">Email: </label>
-        <br>
-        <input name="email" type="email" required>
-        <br>
-        <label for="mobile">Phone Number: </label>
-        <br>
-        <input name="mobile" type="text" required>
-        <br>
-        <label for="industry">Industry: </label>
-        <br>
-        <input name="industry" type="text" required>
-        <br>
-        <input type="submit" value="Send Away!"/>
-    </form>
-    <br>
-<script src="index.js"></script>
+    <div class="container">
+
+        <div class="nav-top">
+            <div class="one">
+                <a class="svg" href="#"><img class="logo" src="assets/bayard_logo.svg" alt="Bayard"></a>
+            </div>
+
+            <div class="two">
+                <h2>Transforming Talent</h2>
+            </div>
+        </div>
+
+        <div class="nav-bottom">
+
+        <div class="hero">
+            <img src="assets/hero_img.jpg" alt="hero">
+            <div class="hero-text">
+                Geofencing: 
+                Location-based 
+                Technology for 
+                Recruitment 
+                Strategies.</div>
+        </div>
+
+        <form class="form">
+            <label for="name">Name: </label><br>
+            <input name="name" type="text" required><br>
+            <label for="email">Email: </label><br>
+            <input name="email" type="email" required><br>
+            <label for="mobile">Phone Number: </label><br>
+            <input name="mobile" type="text" required><br>
+            <label for="industry">Industry: </label><br>
+            <input name="industry" type="text" required><br>
+            <input class="button" type="submit" value="Send Away!"/>
+        </form>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <h3><span>© BAYARD ADVERTISING.</span>
+            <span>ALL RIGHTS RESERVED.</span></h3>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

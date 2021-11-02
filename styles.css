@@ -1,9 +1,87 @@
 body {
-    background-color: #dddddd;
-    text-align: center;
+    background-color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column
 }
 
-form {
-    display: inline-block;
-    padding: 50px;
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 300px;
+}
+
+
+/* Top Container (Nav + Quote) */
+.nav-top {
+    display: flex;
+  }
+  
+  .one {
+    margin-right: 20px;
+  }
+  
+  .two {
+    flex: 1;
+    border: 2px solid yellow;
+  }
+
+
+/* Bottom Container (Hero + Form) */
+
+.nav-bottom {
+    display: flex;
+  }
+
+.hero {
+height: 400px;
+width: 400px;
+position: relative;
+margin-right: 20px;
+}
+
+.form {
+    flex: 1;
+    border: 2px solid yellow;
+  }
+
+.hero img {
+    width: 500px;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    left: 150px;
+    top: 50px;
+  }
+
+.button {
+  color: #ffffff;
+  font-weight: 800;
+  padding: 15px 100px;
+  margin-top: 10px;
+  background: #0071F5;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 30px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.footer h3 {
+    padding: 60px;
 }
