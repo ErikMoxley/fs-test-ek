@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack Test</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300,700,720&display=swap" rel="stylesheet"> </head>
 
 <body>
     <div class="container">
-
+        <div class="content">
         <div class="nav-top">
             <div class="one">
                 <a class="svg" href="#"><img class="logo" src="assets/bayard_logo.svg" alt="Bayard"></a>
@@ -24,36 +26,37 @@
         <div class="nav-bottom">
 
         <div class="hero">
-            <img src="assets/hero_img.jpg" alt="hero">
+            <figure>
+                <img src="assets/hero_img.jpg" alt="hero">
+              </figure>
             <div class="hero-text">
-                Geofencing: 
+                <p>Geofencing: 
                 Location-based 
                 Technology for 
                 Recruitment 
-                Strategies.</div>
+                Strategies.</p>
+            </div>
         </div>
-
-        <form class="form">
-            <label for="name">Name: </label><br>
+    <div class="form">
+        <h2>Connect with one of our experts to learn more!</h2>
+        <form class="form-inputs">
+            <label for="name">Name *</label><br>
             <input name="name" type="text" required><br>
-            <label for="email">Email: </label><br>
+            <label for="email">Email *</label><br>
             <input name="email" type="email" required><br>
-            <label for="mobile">Phone Number: </label><br>
+            <label for="mobile">Phone Number *</label><br>
             <input name="mobile" type="text" required><br>
-            <label for="industry">Industry: </label><br>
+            <label for="industry">Industry *</label><br>
             <input name="industry" type="text" required><br>
             <input class="button" type="submit" value="Send Away!"/>
         </form>
-
-        </div>
-
     </div>
-
-
+</div>
     <footer class="footer">
-        <h3><span>© BAYARD ADVERTISING.</span>
-            <span>ALL RIGHTS RESERVED.</span></h3>
+        <h3><div class="copyright">© BAYARD ADVERTISING.</div>
+            <div class="copyright">ALL RIGHTS RESERVED.</div></h3>
     </footer>
-    <script src="index.js"></script>
+    </div>
+<script src="index.js"></script>
 </body>
 </html>
