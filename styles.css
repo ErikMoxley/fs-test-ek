@@ -1,48 +1,53 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    height: 100%;
-    position: relative;
+    background-color: #000000;
+    margin: 0;
+    max-width: 100%;
 }
 
 .container {
   width: 100%;
-  margin: auto;
-  transition: ease all .5s;
   position: relative;
+  transition: ease all .5s;
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .content {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transition: ease all .5s;
-}
-
-@media only screen and (max-width: 800px) {
-  .content {
-    top: 0%;
-    left: 0%;
-  }
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: ease all 1.0s;
 }
 
 .one {
-  text-align: left;
-  padding-left: 40px;
+  padding-top: 20px;
 }
 
 .two h2 {
-  text-align: left;
-  padding-left: 40px;
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 0.05cm;
 }
+.hero {
+  width: 600px;
+  height: 600px;
+}
+
+.box {
+  width: 360px;
+  height: 600px;
+  overflow: hidden;
+}
 
 .hero img {
-    width: 350px;
-    height: 500px;
-    position: relative;
+  width: 700px;
+  height: 550px;
+  margin-left: -170px;
+  margin-top: 0px;
 }
 
 .hero-text {
@@ -51,11 +56,11 @@ html, body {
     text-shadow: 2px 2px 4px #4e4e4e;    
     font-size: 40px;
     font-weight: bold;
-    inline-size: 400px;
+    inline-size: 300px;
     overflow-wrap: break-word;
-    position: absolute;
-    top: 5em;
-    left: 2em;
+    position: relative;
+    top: -580px;
+    left: 20px;
   }
 
 .form h2 {
@@ -65,21 +70,24 @@ html, body {
 }
 
 input {
-  width: 375px;
-  padding: 25px 20px;
-  margin: 20px 0;
+  width: 360px;
+  padding: 25px 0px;
+  margin: 15px 0;
   border: solid 2px #d8d8d8;
   box-sizing: border-box;
 }
 
+label {
+  text-align: left;
+}
+
 .form {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .form-inputs {
   font-size: 13px;
   font-weight: 800;
-  text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.04cm;
 }
@@ -100,23 +108,87 @@ input {
 }
 
 .footer {
-  text-align: center;
   color: #ffffff;
-  background:#000000;
-  box-shadow: 0 50vh 0 50vh rgb(0, 0, 0);
-  clear: both;
-  position: relative;
-  margin-bottom: 50px;
-  width: 100%;
+  background-color: #000000;
+  margin-top: auto;
+  min-height: 15vh;
 }
 
 .footer h3 {
+  text-align: center;
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.12cm;
-  padding: 40px;
+  padding: 60px;
 }
 
-.copyright {
+.copyright, .copyright-2 {
   padding: 5px;
+  transition: ease all 1.0s;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 1100px) {
+  .container {
+    min-height: 100vh;
+  }
+  .footer {
+    min-height: 15vh;
+  }
+  .one {
+    padding-left: 20px;
+    float: left;
+  }
+  .two {
+    padding-top: 30px;
+    padding-left: 13em;
+    width: 450px;
+  }
+  .form {
+    width: 50%;
+    float: right;
+    padding-bottom: 200px;
+  }
+  .content {
+    width: 1300px;
+    padding-top: 100px;
+  }
+  .box {
+    width: 550px;
+    height: 800px;
+    overflow: hidden;
+  }
+  .hero {
+    padding-left: 20px;
+    margin-bottom: -600px;
+  }
+  .hero img {
+    width: 1100px;
+    height: 800px;
+    margin-left: -275px;
+    margin-top: 0px;
+  }
+  .hero-text {
+    font-size: 55px;
+    inline-size: 500px;
+    top: -750px;
+    left: 40px;
+  }
+  input {
+    width: 500px;
+  }
+  .copyright {
+    float: left;
+    padding-left: 25%;
+  }
+  .copyright-2 {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .copyright {
+    float: left;
+    padding-left: 38%;
+  }
 }
