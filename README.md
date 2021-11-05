@@ -2,6 +2,14 @@
 
 Full Stack Assessment from Bayard Advertising
 
+## Built With
+
+- Frontend - HTML, CSS, JavaScript
+- Backend - ExpressJS, NodeJS
+- Database - MySQL
+- Backend Validation - Express Validator
+- Frontend Validation - HTML's "Required"
+
 ## How I Run the App
 
 - Using XAMPP Control Panel, I ran an Apache and MySQL off of my local machine.
@@ -10,14 +18,6 @@ Full Stack Assessment from Bayard Advertising
 - Running node app.js listens to port 3000 for backend
 - Start Live Server on VSCode for frontend
 - Once Submitted, POST goes to the ExpressJS server, which then validates and inserts into MySQL DB
-
-## Built With
-
-- Frontend - HTML, CSS, JavaScript
-- Backend - ExpressJS, NodeJS
-- Database - MySQL
-- Backend Validation - Express Validator
-- Frontend Validation - HTML's "Required"
 ## Dependencies
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
