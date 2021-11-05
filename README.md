@@ -18,11 +18,11 @@ for notes on deploying the project on a live system.
 
 ## Built With
 
-  Frontend - HTML, CSS, JavaScript
-  Backend - Express, NodeJS
-  Database - MySQL
-  Backend Validation - Express Validator
-  Frontend Validation - HTML's "Required"
+- Frontend - HTML, CSS, JavaScript
+- Backend - Express, NodeJS
+- Database - MySQL
+- Backend Validation - Express Validator
+- Frontend Validation - HTML's "Required"
 ## Dependencies
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -31,7 +31,7 @@ for notes on deploying the project on a live system.
     "mysql": "^2.18.1"
 ## Author
 
-  - **Eric Kongkaew**-
+  - **Eric Kongkaew** - 
     [ErikMoxley](https://github.com/ErikMoxley)
 
 ## Acknowledgments
