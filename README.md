@@ -12,12 +12,13 @@ Full Stack Assessment from Bayard Advertising
 
 ## How I Run the App
 
-- Using XAMPP Control Panel, I ran an Apache and MySQL off of my local machine.
-- I use fetch("http://localhost:3000/" in my index.js to connect my front end to my local backend.
+- Using XAMPP Control Panel, I ran an Apache and MySQL off of my local machine
+- I use fetch("http://localhost:3000/" in my index.js to connect my front end to my local backend
 - host: 'localhost', user: 'mysql_test', database: 'fs_test' from MySQL
 - Running node app.js listens to port 3000 for backend
 - Start Live Server on VSCode for frontend
 - Once Submitted, POST goes to the ExpressJS server, which then validates and inserts into MySQL DB
+- http://localhost/phpmyadmin/ to view/edit MySQL Database
 ## Dependencies
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
