@@ -2,11 +2,10 @@ const express = require('express')
 const app = express()
 const port = 3000
 const cors = require('cors')
-const bodyParser = require('body-parser');
 const { body, validationResult } = require('express-validator');
 
 app.use(cors());
-app.use(bodyParser.urlencoded())
+app.use(express.urlencoded({ extended: true }))
 
 var mysql = require('mysql')
 var connection = mysql.createConnection({
@@ -49,5 +48,5 @@ app.post('/',
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Listening at http://localhost:${port}`)
 })
