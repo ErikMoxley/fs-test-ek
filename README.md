@@ -1,6 +1,6 @@
 # Project Title
 
-Full Stack Assessment from Bayard Advertising
+Full Stack Form Input Using Express, NodeJS and MySQL
 
 ## Built With
 
@@ -27,9 +27,5 @@ Full Stack Assessment from Bayard Advertising
     "mysql": "^2.18.1"
 ## Author
 
-  - **Eric Kongkaew** - 
+  - **Eric K** - 
     [ErikMoxley](https://github.com/ErikMoxley)
-
-## Acknowledgments
-- Thank you Matthew Glaittli, Technical Recruiter for 1st interview and sending me the assessment. 
-- Thank you Bayard for giving me a chance at the Full Stack Assessment for your Front End Developer position.
