@@ -9,10 +9,10 @@ app.use(express.urlencoded({ extended: true }))
 
 var mysql = require('mysql')
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'mysql_test',
-  password: 'fstest12345',
-  database: 'fs_test'
+  host: 'us-cdbr-east-05.cleardb.net',
+  user: 'b56589ccf620a5',
+  password: '5b0ec773',
+  database: 'heroku_e26755c34a76256'
 })
 
 connection.connect()
@@ -48,5 +48,5 @@ app.post('/',
 })
 
 app.listen(PORT, () => {
-  console.log(`Listening at App Running`);
+  console.log(`Listening on port:${PORT}`);
 });
