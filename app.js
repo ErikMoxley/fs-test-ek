@@ -10,8 +10,8 @@ app.use(cors({
     optionsSuccessStatus: 200,
     origin: 'https://fs-forms-ek.herokuapp.com/'
   }));
-app.options('*', cors());
-headers.set("Access-Control-Allow-Origin", "https://fs-forms-ek.herokuapp.com/", "*");  
+app.options(cors());
+headers.set("Access-Control-Allow-Origin", "https://fs-forms-ek.herokuapp.com/");  
 
 const mysql = require('mysql')
 const connection = mysql.createConnection({
