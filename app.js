@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const PORT = 3000
 const cors = require('cors')
 const { body, validationResult } = require('express-validator');
 
