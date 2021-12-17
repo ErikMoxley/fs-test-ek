@@ -13,7 +13,6 @@
   "description": "Full Stack Form Input Using Express, NodeJS and MySQL",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ErikMoxley/fs-test-ek.git"
