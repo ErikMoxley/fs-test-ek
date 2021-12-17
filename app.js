@@ -7,9 +7,9 @@ const cors = require('cors');
 app.use(cors({
     methods: 'GET,POST,PATCH,DELETE,OPTIONS',
     optionsSuccessStatus: 200,
-    origin: 'https://fs-forms-ek.herokuapp.com'
+    origin: 'https://fs-forms-ek.herokuapp.com/'
   }));
-  app.options('https://fs-forms-ek.herokuapp.com', cors());
+  app.options('https://fs-forms-ek.herokuapp.com/', cors());
 
 app.use(express.urlencoded({ extended: true }));
 
