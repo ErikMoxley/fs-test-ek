@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
+const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
 app.use( function (req, res){
