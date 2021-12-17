@@ -1,16 +1,16 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 8000;
-const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://fs-forms-ek.herokuapp.com/",
-    methods: ["GET", "POST"],
-    credentials: true,
-})
-); // <---- cors middleware
+    methods: 'GET,POST,PATCH,DELETE,OPTIONS',
+    optionsSuccessStatus: 200,
+    origin: 'https://fs-forms-ek.herokuapp.com'
+  }));
+app.options('*', cors());
 
 const mysql = require('mysql')
 const connection = mysql.createConnection({
