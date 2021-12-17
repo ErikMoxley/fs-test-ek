@@ -10,6 +10,7 @@ app.use(cors({
     credentials: true
     })
 );
+headers.set("Access-Control-Allow-Origin", "https://fs-forms-ek.herokuapp.com");  
 
 app.use(express.urlencoded({ extended: true }));
 
