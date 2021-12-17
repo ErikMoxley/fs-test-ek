@@ -6,7 +6,7 @@ const { body, validationResult } = require('express-validator');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "*"
+    origin: "https://fs-forms-ek.herokuapp.com/"
   }));
 
 const mysql = require('mysql')
