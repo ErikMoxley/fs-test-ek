@@ -2,13 +2,9 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 8000
 const { body, validationResult } = require('express-validator')
-const cors = require("cors")
+const cors = require('cors')
 
-app.use(cors({
-    origin: "*",
-    credentials: true,
-    })
-)
+app.use(cors())
 
 app.use(express.urlencoded({ extended: true }));
 
