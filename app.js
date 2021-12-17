@@ -11,8 +11,8 @@ app.use(
 );
 app.use(express.urlencoded({ extended: true }))
 
-var mysql = require('mysql')
-var connection = mysql.createConnection({
+const mysql = require('mysql')
+const connection = mysql.createConnection({
   host: 'us-cdbr-east-05.cleardb.net',
   user: 'b56589ccf620a5',
   password: '5b0ec773',
