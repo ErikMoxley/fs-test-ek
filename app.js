@@ -6,7 +6,6 @@ const cors = require("cors")
 
 app.use(cors({
     origin: "*",
-    methods: ["POST"],
     credentials: true,
     })
 )
