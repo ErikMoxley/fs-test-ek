@@ -5,7 +5,8 @@ const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
 app.use(cors({
-    origin: "*",    
+    origin: "*",
+    credentials: true,    
 })
 );
 
