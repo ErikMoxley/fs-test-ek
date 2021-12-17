@@ -48,5 +48,5 @@ app.post('/',
 })
 
 app.listen(PORT, () => {
-  console.log(`Listening at App Running`)
-})
+  console.log(`Listening at App Running`);
+});
