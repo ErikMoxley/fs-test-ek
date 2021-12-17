@@ -4,8 +4,9 @@ const port = process.env.PORT || 8000;
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
-app.use(cors({
-    origin: "https://fs-forms-ek.herokuapp.com/",
+app.use(
+    cors({
+    origin: "*",
     })
 );
 app.use(express.urlencoded({ extended: true }))
