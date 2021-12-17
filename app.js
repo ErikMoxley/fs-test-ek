@@ -6,12 +6,8 @@ const { body, validationResult } = require('express-validator');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    methods: 'GET,POST,PATCH,DELETE,OPTIONS',
-    optionsSuccessStatus: 200,
-    origin: 'https://fs-forms-ek.herokuapp.com'
+    origin: "*"
   }));
-app.options(cors());
-headers.set("Access-Control-Allow-Origin", "https://fs-forms-ek.herokuapp.com");  
 
 const mysql = require('mysql')
 const connection = mysql.createConnection({
