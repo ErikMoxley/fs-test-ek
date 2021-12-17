@@ -5,7 +5,8 @@ const { body, validationResult } = require('express-validator');
 const corsMiddleware = require('./cors');
 
 app.use(express.urlencoded({ extended: true }));
-app.use(corsMiddleware)
+app.options('*', corsMiddleware);
+app.use(corsMiddleware);
 
 const mysql = require('mysql')
 const connection = mysql.createConnection({
