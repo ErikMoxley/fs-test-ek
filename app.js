@@ -4,11 +4,12 @@ const port = process.env.PORT || 8000;
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
-app.use( function (req, res){
+app.use( function (req, res, next){
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");}
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();}
 );
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 app.use(cors()); // <---- cors middleware
 
 const mysql = require('mysql')
