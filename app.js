@@ -5,7 +5,7 @@ const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
 app.use(cors({
-    origin: "*",
+    origin: "https://fs-forms-ek.herokuapp.com",
     credentials: true,    
 })
 );
