@@ -6,7 +6,8 @@ const cors = require('cors');
 
 app.use(cors({
     origin: "https://fs-forms-ek.herokuapp.com",
-    credentials: true
+    credentials: true,
+    methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
     })
 );
 
