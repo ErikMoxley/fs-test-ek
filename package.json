@@ -1,6 +1,6 @@
 {
   "scripts": {
-   "start": "node app.js" 
+    "start": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -8,5 +8,20 @@
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
     "mysql": "^2.18.1"
-  }
+  },
+  "name": "fs-test-ek",
+  "description": "Full Stack Form Input Using Express, NodeJS and MySQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikMoxley/fs-test-ek.git"
+  },
+  "author": "Erik Moxley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErikMoxley/fs-test-ek/issues"
+  },
+  "homepage": "https://github.com/ErikMoxley/fs-test-ek#readme"
 }
