@@ -17,10 +17,6 @@ var connection = mysql.createConnection({
 
 connection.connect()
 
-app.get('/', function(req, res) {
-    res.render('pages/index')
-});
-
 app.post('/',
     body('email').isEmail({ max: 100 }),
     body('name').isLength({ min: 1, max: 50 }),
