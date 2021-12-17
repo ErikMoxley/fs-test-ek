@@ -47,6 +47,7 @@ app.post('/', cors(),
         res.send('Form Successfully Submitted!');
     })
 })
+
 app.listen(port, () => {
     console.log("App is running on port " + port);
 });
