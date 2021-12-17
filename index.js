@@ -2,8 +2,7 @@ document.forms[0].onsubmit = (e) => {
     e.preventDefault();
     const params = new URLSearchParams([...new FormData(e.target).entries()]);
     fetch("https://fs-forms-ek.herokuapp.com/", {
-        credentials: "include",
-        body:params
+        credentials: "include"
       })
       .then(res => res.text())
       .then(alert)
