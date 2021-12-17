@@ -9,7 +9,7 @@ app.use(cors({
     optionsSuccessStatus: 200,
     origin: 'https://fs-forms-ek.herokuapp.com'
   }));
-  app.options('*', cors());
+  app.options('https://fs-forms-ek.herokuapp.com', cors());
 
 app.use(express.urlencoded({ extended: true }));
 
