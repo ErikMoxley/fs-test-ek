@@ -47,6 +47,6 @@ app.post('/',
     })
 })
 
-app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`)
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Listening at http://localhost:${PORT}`)
 })
