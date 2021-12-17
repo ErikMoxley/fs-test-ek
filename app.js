@@ -21,7 +21,7 @@ var connection = mysql.createConnection({
   database: 'heroku_e26755c34a76256'
 })
 connection.connect()
-app.post('/',
+app.post('/', cors(),
     body('email').isEmail({ max: 100 }),
     body('name').isLength({ min: 1, max: 50 }),
     body('industry').isLength({ min: 1, max: 100 }),
