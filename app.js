@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
@@ -47,6 +47,6 @@ app.post('/',
     })
 })
 
-app.listen(PORT, () => {
-  console.log(`Listening on port:${PORT}`);
+server.listen(port, () => {
+    console.log("App is running on port " + port);
 });
