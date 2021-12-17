@@ -1,7 +1,7 @@
-const express = require('express')
-const app = express()
-const PORT = 3000
-const cors = require('cors')
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
 app.use(cors());
@@ -47,6 +47,6 @@ app.post('/',
     })
 })
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(PORT, () => {
   console.log(`Listening at http://localhost:${PORT}`)
 })
