@@ -4,13 +4,12 @@ const port = process.env.PORT || 8000;
 const { body, validationResult } = require('express-validator');
 const cors = require('cors');
 
-app.use(function (req, res, cors) {
-    res.setHeader('Access-Control-Allow-Origin', 'https://fs-forms-ek.herokuapp.com/');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    cors();
-});
+app.use(cors({
+    methods: 'GET,POST,PATCH,DELETE,OPTIONS',
+    optionsSuccessStatus: 200,
+    origin: 'https://fs-forms-ek.herokuapp.com'
+  }));
+  app.options('*', cors());
 
 app.use(express.urlencoded({ extended: true }));
 
