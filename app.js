@@ -7,7 +7,7 @@ const { body, validationResult } = require('express-validator');
 app.use(cors({
     methods: 'GET,POST,PATCH,DELETE,OPTIONS',
     optionsSuccessStatus: 200,
-    origin: 'hhttps://erikmoxley.github.io/fs-test-ek'
+    origin: 'https://erikmoxley.github.io/fs-test-ek'
   }));
   app.options('*', cors());
 
