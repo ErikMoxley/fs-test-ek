@@ -4,9 +4,7 @@ const port = process.env.PORT || 8000;
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
-app.use(cors());
-
-app.use(function(req, res, next) {
+app.use(cors, function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek/");
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
