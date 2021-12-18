@@ -1,13 +1,15 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 8000;
 const { body, validationResult } = require('express-validator');
-const cors = require('cors');
 
 app.use(cors({
-    origin: "https://erikmoxley.github.io/fs-test-ek",
-    })
-);
+    methods: 'GET,POST,PATCH,DELETE,OPTIONS',
+    optionsSuccessStatus: 200,
+    origin: 'hhttps://erikmoxley.github.io/fs-test-ek'
+  }));
+  app.options('*', cors());
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek");
