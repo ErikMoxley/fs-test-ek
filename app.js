@@ -5,7 +5,7 @@ const { body, validationResult } = require('express-validator');
 const cors = require('cors');
 
 app.use(cors({
-    origin: "https://erikmoxley.github.io/fs-test-ek/",
+    origin: "https://fs-forms-ek.herokuapp.com",
     methods: ["POST"],
     })
 );
