@@ -4,10 +4,11 @@ const app = express();
 const port = process.env.PORT || 8000;
 const { body, validationResult } = require('express-validator');
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://erikmoxley.github.io/fs-test-ek');
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
-  });
+    });
 
 app.post('/',
     body('email').isEmail({ max: 100 }),
