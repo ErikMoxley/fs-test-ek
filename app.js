@@ -7,7 +7,7 @@ const { body, validationResult } = require('express-validator');
 app.use(cors());
 
 app.use(function(req, res, next) {  
-    res.header('Access-Control-Allow-Origin', req.headers.origin);
+    res.header('Access-Control-Allow-Origin', 'https://erikmoxley.github.io/fs-test-ek');
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 }); 
