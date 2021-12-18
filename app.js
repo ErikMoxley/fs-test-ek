@@ -9,6 +9,12 @@ app.use(cors({
     })
 );
 
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek");
+    res.header("Access-Control-Allow-Headers", "Origin, X-REquested-With, Content-Type, Accept");
+    next();
+});
+
 app.post('/',
     body('email').isEmail({ max: 100 }),
     body('name').isLength({ min: 1, max: 50 }),
