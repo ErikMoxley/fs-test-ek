@@ -4,6 +4,8 @@ const app = express();
 const port = process.env.PORT || 8000;
 const { body, validationResult } = require('express-validator');
 
+app.use(express.urlencoded({ extended: true }))
+
 app.use(cors({
     origin: "*",
 }
@@ -35,8 +37,6 @@ app.post('/',
         res.send('Form Successfully Submitted!');
     })
 })
-
-app.use(express.urlencoded({ extended: true }))
 
 const mysql = require('mysql')
 const connection = mysql.createConnection({
