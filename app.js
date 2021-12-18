@@ -45,7 +45,7 @@ app.post('/',
 })
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek/");
+    res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek");
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
