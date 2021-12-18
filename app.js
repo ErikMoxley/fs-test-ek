@@ -6,6 +6,12 @@ const { body, validationResult } = require('express-validator');
 
 app.use(cors());
 
+app.use(function(req, res, next) {  
+    res.header('Access-Control-Allow-Origin', req.headers.origin);
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+}); 
+
 app.post('/',
     body('email').isEmail({ max: 100 }),
     body('name').isLength({ min: 1, max: 50 }),
