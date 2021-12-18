@@ -5,7 +5,7 @@ const port = process.env.PORT || 8000;
 const { body, validationResult } = require('express-validator');
 
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Origin', 'https://erikmoxley.github.io/fs-test-ek');
     next();
   });
 
