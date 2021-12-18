@@ -4,6 +4,8 @@ const port = process.env.PORT || 8000;
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 
+app.use(cors());
+
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek/");
     res.header("Access-Control-Allow-Credentials", true);
@@ -14,15 +16,16 @@ app.use(function(req, res, next) {
   
 app.use(express.urlencoded({ extended: true }))
 
-var mysql = require('mysql')
-var connection = mysql.createConnection({
+const mysql = require('mysql')
+const connection = mysql.createConnection({
   host: 'us-cdbr-east-05.cleardb.net',
   user: 'b56589ccf620a5',
   password: '5b0ec773',
   database: 'heroku_e26755c34a76256'
 })
 connection.connect()
-app.post('/', cors(),
+
+app.post('/',
     body('email').isEmail({ max: 100 }),
     body('name').isLength({ min: 1, max: 50 }),
     body('industry').isLength({ min: 1, max: 100 }),
