@@ -23,7 +23,7 @@ app.post('/',
     body('industry').isLength({ min: 1, max: 100 }),
     body('mobile').isLength({ min: 6, max: 20 }),
     (req, res) => {
-    res.header("Access-Control-Allow-Origin", "https://fs-forms-ek.herokuapp.com");
+    res.header("Access-Control-Allow-Origin", "https://erikmoxley.github.io/fs-test-ek");
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
