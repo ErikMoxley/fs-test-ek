@@ -8,14 +8,14 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }))
 
 const mysql = require('mysql')
-const connection = mysql.createConnection({
+const pool = mysql.createPool({
   host: 'us-cdbr-east-05.cleardb.net',
   user: 'b56589ccf620a5',
   password: '5b0ec773',
   database: 'heroku_e26755c34a76256'
 })
 
-connection.connect()
+pool.connect()
 
 app.post('/',
     body('email').isEmail({ max: 100 }),
