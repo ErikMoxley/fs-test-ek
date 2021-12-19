@@ -42,7 +42,6 @@ app.post('/',
         function (err, data) {
         if (err) throw err
         res.send('Form Successfully Submitted!');
-        frm.reset();  // Reset all form data
     })
 })
 
