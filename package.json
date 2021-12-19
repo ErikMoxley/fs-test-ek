@@ -12,7 +12,7 @@
   "name": "fs-test-ek",
   "description": "Full Stack Form Input Using Express, NodeJS and MySQL",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ErikMoxley/fs-test-ek.git"
