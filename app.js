@@ -15,8 +15,6 @@ const connection = mysql.createPool({
   database: 'heroku_e26755c34a76256'
 })
 
-connection.connect()
-
 app.post('/',
     body('email').isEmail({ max: 100 }),
     body('name').isLength({ min: 1, max: 50 }),
