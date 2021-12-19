@@ -8,3 +8,12 @@ document.forms[0].onsubmit = (e) => {
     .then(res => res.text())
     .then(alert)
 };
+
+function submitForm() {
+  // Get the first form with the name
+  // Hopefully there is only one, but there are more, select the correct index
+  var frm = document.getElementsByName('contact-form')[0];
+  frm.submit(); // Submit
+  frm.reset();  // Reset
+  return false; // Prevent page refresh
+}
