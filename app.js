@@ -3,17 +3,21 @@ const app = express()
 const port = process.env.PORT || 3000
 const cors = require('cors')
 const { body, validationResult } = require('express-validator');
+const dotenv = require('dotenv')
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }))
+dotenv.config();
 
 const mysql = require('mysql')
 const connection = mysql.createPool({
-  host: 'us-cdbr-east-05.cleardb.net',
-  user: 'b56589ccf620a5',
-  password: '5b0ec773',
-  database: 'heroku_e26755c34a76256'
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
 })
+
+//^Need .env
 
 app.post('/',
     body('email').isEmail({ max: 100 }),
