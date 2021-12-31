@@ -8,7 +8,3 @@ document.forms[0].onsubmit = (e) => {
     .then(res => res.text())
     .then(alert)
 };
-
-function newFunction() {
-  document.getElementById("form-inputs").reset();
-}
