@@ -22,6 +22,7 @@ Full Stack Form Input Using Express, NodeJS and MySQL
 ## Dependencies
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "env": "^0.0.2",
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
     "mysql": "^2.18.1"
