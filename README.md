@@ -10,7 +10,7 @@ Full Stack Form Input Using Express, NodeJS and MySQL
 - Backend Validation - Express Validator
 - Frontend Validation - HTML's "Required"
 
-## How I Run the App
+## How I Ran the App in Develop Before Deploying to Heroku
 
 - Using XAMPP Control Panel, I ran an Apache and MySQL off of my local machine
 - I use fetch("http://localhost:3000/" in my index.js to connect my front end to my local backend
