@@ -19,6 +19,8 @@ Full Stack Form Input Using Express, NodeJS and MySQL
 - Start Live Server on VSCode for frontend
 - Once Submitted, POST goes to the ExpressJS server, which then validates and inserts into MySQL DB
 - http://localhost/phpmyadmin/ to view/edit MySQL Database
+- Still would have to add .env to not show MySQL credentials
+
 ## Dependencies
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
